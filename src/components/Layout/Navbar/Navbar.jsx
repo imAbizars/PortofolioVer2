@@ -48,6 +48,18 @@ export default function Navbar({ handleThemeSwitch, theme }) {
                 Projects
               </a>
             </li>
+            <li>
+  <a
+    className={
+      pathMatchRoute('/sertifikat')
+        ? 'mb-1 rounded-xl bg-[#cacfd7] px-2.5  py-2.5 font-noto text-[15px] text-gray-800 hover:bg-[#bfc4cb]'
+        : 'mb-1 rounded-xl px-2.5  py-2.5 font-noto text-[15px] text-gray-500 active:bg-[#dbdee3]'
+    }
+    onClick={() => navigate('/sertifikat')}
+  >
+    Sertifikat
+  </a>
+</li>
           </ul>
         </div>
         <Link to="/">
