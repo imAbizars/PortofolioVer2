@@ -18,8 +18,12 @@ export default function HeroSection() {
           </p>
         </div>
 
-        <div className="invisible right-2 top-28 z-20 mx-auto flex max-w-[10px] flex-col justify-center opacity-75 md:opacity-70 lg:visible lg:max-w-[470px] lg:opacity-100 xl:bottom-32 xl:right-0 xl:max-w-[540px] 2xl:top-20 2xl:max-w-[580px] 2.5xl:max-w-[600px] 3xl:top-0 3xl:max-w-[700px]">
-          <img src={FotoProfil} alt="pp" className="rounded-full w-[350px] h-[350px] object-cover"/>
+        <div className="flex shrink-0 justify-center">
+          <img
+            src={FotoProfil}
+            alt="Foto profil Dennis"
+            className="h-[200px] w-[200px] rounded-full object-cover sm:h-[280px] sm:w-[280px] lg:h-[350px] lg:w-[350px]"
+          />
         </div>
       </div>
     </div>
