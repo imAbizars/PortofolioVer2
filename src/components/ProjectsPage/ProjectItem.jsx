@@ -94,10 +94,7 @@ export default function ProjectItem({ project }) {
   const images = projectImages[project.id]
 
   return (
-    <div
-      className="col-span-4 flex flex-col flex-wrap justify-between overflow-hidden rounded-xl border border-[#e5e4e4] bg-[#f5f4f3] p-6 shadow-sm hover:shadow-md md:col-span-2 lg:col-span-1 2xl:col-span-1"
-      style={{ height: '550px' }}
-    >
+    <div className="col-span-4 flex h-full flex-col overflow-hidden rounded-xl border border-[#e5e4e4] bg-[#f5f4f3] p-4 shadow-sm hover:shadow-md sm:p-6 md:col-span-2 lg:col-span-1 2xl:col-span-1">
       <div className="text-left">
         <h1 className="font-satoshi text-xl font-semibold text-gray-700">{project.name}</h1>
       </div>
@@ -108,7 +105,7 @@ export default function ProjectItem({ project }) {
 
       <p className="mt-4 text-left text-gray-600">{project.shortDescription}</p>
 
-      <div className="flex grow items-end gap-2 text-gray-600">
+      <div className="mt-4 flex grow items-end gap-2 text-gray-600">
         {project.github && (
           <a href={project.github} target="_blank" rel="noreferrer" className="rounded-lg bg-[#e8e7e5] p-1 px-1.5 hover:bg-[#dfdddb]">
             GitHub
