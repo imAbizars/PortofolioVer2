@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans&family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&family=Figtree&display=swap');
+* {
+  //font-family: 'Inter', sans-serif;
+  //font-family: 'Noto Sans', sans-serif;
+  //font-family: 'Supreme', sans-serif;
+  //font-family: 'Open Sans', sans-serif;
+  //font-family: 'Roboto', sans-serif;
+  
+/*
+  font-family: 'Satoshi', sans-serif;
+  font-family: 'General Sans', sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
+  font-family: 'Outfit', sans-serif;
+  font-family: 'Supreme', sans-serif;
+  font-family: 'JetBrains Mono', sans-serif; 
+  */
+  
+/*
+  BLUEISH GRAY CARDS e2e8f0 dark mode | light mode eaeff4  f6f6f6 LIGHT GRAY CARDS e6edf6 ecf0f4 | f1f1f1 or f0f2f4 |   e8edf4
+  ark: dcdedf or lighter e2e8f0
+  latest ac64e3 PURPLER 10b981 VASILIS TITLE DARK EMERALD - 00adb5
+  20294c DARK BLUE FOR NAME ON LIGHT
+*/
+}
+
+.mainCard {
+  @apply rounded-2xl border border-[#ebebeb] bg-[#f1f0ee] p-5 text-center shadow-sm dark:bg-[#edeeef];
+}
+
+.projOverflowCard {
+  @apply justify-between rounded-2xl border border-[#ebebeb] bg-[#f1f0ee] p-3.5 text-center dark:bg-[#edeeef];
+}
+
+.projMainPageCard {
+  @apply flex flex-col justify-between rounded-2xl border border-[#ebebeb] bg-[#f1f0ee] p-3.5 text-center dark:bg-[#edeeef];
+}
+.cardHoverShadow {
+  @apply shadow-sm transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-black/30;
+}
+
+.homeProjectDescription {
+  @apply px-1 text-justify font-supreme text-[19.5px] text-gray-600 dark:text-[#383b41];
+}
+
+
+
+/* For Webkit-based browsers (Chrome, Safari and Opera) */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* images border */
+.card2:hover {
+  transform: scale(0.98);
+}
+.projCardScaleUpHover {
+  transition: all 0.3s;
+}
+.projCardScaleUpHover:hover {
+  transform: scale(0.99);
+}
+
+.card:hover {
+  box-shadow: 0px 5px 40px 2px rgba(155, 40, 117, 0.35);
+  background-image: linear-gradient(146deg, rgba(155, 40, 117, 0.35) 0%, #3700ff 100%);
+  transition: all 0.3s;
+}
+.cardgreen:hover {
+  box-shadow: 0px 5px 40px 2px rgba(155, 190, 117, 0.35);
+  background-image: linear-gradient(146deg, #5500ff 0%, rgba(25, 250, 110, 0.45) 100%);
+  transition: all 0.3s;
+}
+
+.cardQuiz:hover {
+  box-shadow: 0px 5px 40px 2px rgba(31, 63, 88, 0.55);
+  background-image: linear-gradient(146deg, #000 0%, #000 100%);
+  transition: all 0.3s;
+  border-radius: 27px;
+}
+.card {
+  transition: all 0.3s;
+}
+.card2 {
+  transition: all 0.3s;
+}
+
+.cardiOS:hover {
+  /* box-shadow: 0px 5px 40px 2px rgba(31, 63, 88, 0.55); */
+  background-image: linear-gradient(146deg, #000 0%, #000 100%);
+  transition: all 0.3s;
+  border-top-left-radius: 27px;
+  border-top-right-radius: 27px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  @apply hover:rounded-bl-[27px] hover:rounded-br-[27px] sm:hover:rounded-bl-[0px] sm:hover:rounded-br-[0px] sm:hover:rounded-tl-[27px] sm:hover:rounded-tr-[27px];
+}
+.singleCardiOS:hover {
+  /* box-shadow: 0px 5px 40px 2px rgba(31, 63, 88, 0.55); */
+  background-image: linear-gradient(146deg, #000 0%, #000 100%);
+  transition: all 0.3s;
+  border-top-left-radius: 27px;
+  border-top-right-radius: 27px;
+  border-bottom-left-radius: 27px;
+  border-bottom-right-radius: 27px;
+}
+
+/* Blur the rest on card hover
+  .cont {
+    
+  }
+
+  .car {
+    transition: all 0.3s;
+  }
+
+  .cont:hover > .car:not(:hover) {
+    filter: blur(4px);
+  }
+*/
