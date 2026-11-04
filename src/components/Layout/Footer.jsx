@@ -17,7 +17,7 @@ export default function Footer() {
       
 
       <div className="flex gap-2 text-right dark:text-[#e0eaf2]">
-        <a className="tooltip tooltip-top" data-tip="github.com/Vasil1001" target="_blank" href="https://github.com/Vasil1001">
+        <a className="tooltip tooltip-top" data-tip="github.com/Vasil1001" target="_blank" href="https://github.com/imAbizars">
           <BsGithub className=" cursor-pointer text-[1.8rem]  hover:fill-[#0058a8 ]  dark:hover:fill-[#00adb5]" fill="black" data-tip="hello" />
         </a>
         <CVButton />
